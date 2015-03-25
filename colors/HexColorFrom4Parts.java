@@ -22,9 +22,7 @@ public class HexColorFrom4parts {
 
     public static int[] hexStringToARGB(String hexARGB) throws IllegalArgumentException {
 
-        Log.d("ml", "hexARGB = " + hexARGB);
-
-        if (!hexARGB.startsWith("#") || !(hexARGB.length() == 7 || hexARGB.length() == 9)) {
+       if (!hexARGB.startsWith("#") || !(hexARGB.length() == 7 || hexARGB.length() == 9)) {
 
             throw new IllegalArgumentException("Hex color string is incorrect!");
         }
